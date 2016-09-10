@@ -1,0 +1,470 @@
+//Imports
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900';
+
+//Global
+body {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.scroll-panel {
+  max-height: 240px;
+  overflow-y: scroll;
+}
+
+.scroll-panel::-webkit-scrollbar-track {
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+.scroll-panel::-webkit-scrollbar {
+	width: 7px;
+	background-color: transparent;
+}
+
+.scroll-panel::-webkit-scrollbar-thumb {
+	background-color: #bbb;
+	border-radius: 10px;
+}
+
+.tab-content>.active{
+  margin-top: 20px !important;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.5;
+  letter-spacing: 0.003em;
+}
+
+.white {
+  color: #FFF;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.relative-row {
+  position: relative !important;
+}
+
+.margin-25-left {
+  margin-left: 25%;
+}
+
+.center {
+  text-align: center;
+}
+
+.latest-update {
+  height: 40px;
+  background: #EF5929;
+  text-align: center;
+  color: #FFF;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 20px;
+}
+
+
+//Main
+.full-content {
+
+  .cover-section {
+    height: 200px;
+    background: #FFF;
+    -webkit-filter: drop-shadow(10px 4px 10px #cacaca);
+    -moz-filter: drop-shadow(10px 4px 10px #cacaca);
+    -ms-filter: drop-shadow(10px 4px 10px #cacaca);
+    filter: drop-shadow(10px 4px 10px #cacaca);
+
+    .banner-image {
+      background: #FFF;
+      height: 200px;
+      background: {
+        image: url(http://placekitten.com/g/400/200);
+        size: cover;
+        position: center center;
+        repeat: no-repeat;
+      }
+    }
+
+    .subcampaign-details {
+      position: relative;
+      height: 200px;
+
+      .subcampaign-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        .subcampaign-title {
+
+          h2 {
+            margin: 0;
+          }
+        }
+
+        .subcampaign-subtitle {
+          color: #909090;
+        }
+      }
+    }
+  }
+
+  .details-container {
+    margin-top: 20px;
+
+    .creator-section {
+
+      &.stick {
+        position:fixed;
+        top:0px;
+      }
+
+      .creator-image {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .creator-name {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 10px;
+
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .creator-links {
+        text-align: center;
+
+        ul {
+          padding: 0 !important;
+
+          li {
+            display: inline;
+            padding: 5px;
+
+            a {
+
+              i.fa {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .details-section {
+
+    }
+
+    .endorse-section {
+
+      .endorser-list {
+
+        .endorser-details-section {
+          border-bottom: 1px solid #ddd;
+
+          .endorser {
+            height: 60px;
+            width: 100%;
+            position: relative;
+
+            &:hover {
+              text-decoration: none;
+              background: #fcfcfc;
+            }
+
+            .endorser-image {
+              float: left;
+              margin: 5px 15px;
+              width: 15%;
+
+              .endorser-image-icon {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+              }
+            }
+
+            .endorser-detail {
+              height: 60px;
+              width: 85%;
+              margin-left: 15%;
+
+              .endorser-name {
+                padding-top: 10px;
+                margin: 0;
+                font-size: 16px;
+                font-weight: 400;
+                color: #212121;
+              }
+
+              .endorser-donation {
+                line-height: 0;
+                font-size: 14px;
+                color: #909090;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#myStory {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.75;
+  letter-spacing: 0.003em;
+  margin-top: 15px;
+}
+
+//Conversation
+.conversation-input {
+  width: 100%;
+  height: 95px;
+
+  .user-conversation-icon {
+    float: left;
+    margin: 15px 0;
+    width: 10%;
+  }
+
+  .user-conversation-input-box {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .post-btn {
+    width: 100px;
+    height: 30px;
+    float: right;
+    border-radius: 0;
+    color: #FFFFFF;
+    background: #EF5A20;
+    margin-top: 5px;
+  }
+}
+
+//Conversation List
+.conversation-list {
+  border: 2px solid #212121;
+  margin-top: 20px;
+
+  .conversation {
+    width: 100%;
+    min-height: 70px;
+
+    .user-conversation-icon {
+      float: left;
+      padding: 10px 10px 0 10px;
+      width: 15%;
+    }
+
+    .user-conversation-details {
+      width: 85%;
+      float: left;
+      padding-top: 10px;
+
+      .user-name {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.1em;
+        line-height: 1.5;
+        letter-spacing: 0.013em;
+      }
+
+      .posted-at {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 0.82em;
+        line-height: 0.5;
+        letter-spacing: 0.003em;
+      }
+    }
+
+    .user-conversation {
+      float: left;
+      padding: 15px 10px;
+      width: 100%;
+    }
+  }
+
+    .user-conversation-input-box {
+      width: 90%;
+      height: 40px;
+      margin-top: 20px;
+    }
+
+    .post-btn {
+      width: 100px;
+      height: 30px;
+      float: right;
+      border-radius: 0;
+      color: #FFFFFF;
+      background: #EF5A20;
+      margin-top: 5px;
+    }
+  }
+
+//Comments
+.comment {
+  width: 100%;
+  min-height: 70px;
+  padding-left: 10%;
+  clear: both;
+  position: relative;
+
+  &:before {
+    border-left: 2px solid #EF5A20;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: calc(100% - 25px);
+    top: 10px;
+    left: 10%;
+  }
+
+  .user-comment-icon {
+    float: left;
+    padding: 10px 10px 0 10px;
+    width: 15%;
+  }
+
+  .user-comment-details {
+    width: 85%;
+    float: left;
+    padding-top: 10px;
+
+    .comment-name {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.1em;
+      line-height: 1.5;
+      letter-spacing: 0.013em;
+    }
+
+    .commented-at {
+      font-weight: 300;
+      font-style: normal;
+      font-size: 0.82em;
+      line-height: 0.5;
+      letter-spacing: 0.003em;
+    }
+  }
+
+  .user-comment {
+    clear: both;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 0.9em;
+  }
+}
+
+//Comment Input
+.comment-input {
+  margin-left: 10%;
+  padding: 5px 10px;
+
+  .comment-input-box {
+    width: 80%;
+    height: 40px;
+  }
+
+  .comment-btn {
+    height: 38px;
+    border-radius: 0;
+    background: #Ef5a20;
+    color: #fff;
+  }
+}
+
+//Endorse Panel
+.endorse {
+  text-align: center;
+
+  .endorse-amount {
+    text-align: center;
+    color: white;
+    background: #EF5a20;
+    margin: 0;
+
+    .endorse-amount-text {
+      margin: 0;
+    }
+  }
+
+  .endorse-btn {
+    width: 90%;
+    margin: 10px 5%;
+    background-color: #ef5a20;
+    color: white;
+    border-radius: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  ul {
+    padding: 0;
+    line-height: 25px;
+  }
+
+  li {
+    display: inline;
+    font-weight: 400;
+
+    i {
+      padding: 5px;
+      background: blue;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      line-height: 15px;
+      margin: 0 5px;
+      color: #FFF;
+    }
+  }
+}
+
+//Endorser List
+.endorser-list {
+
+  .panel-endorse-color {
+    background: #EF5A20;
+    color: #FFF;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      right: 20px;
+      bottom: 0px;
+    }
+  }
+}

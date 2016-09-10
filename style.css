@@ -1,0 +1,315 @@
+@import "https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900";
+body {
+  font-family: 'Lato', sans-serif !important; }
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.scroll-panel {
+  max-height: 240px;
+  overflow-y: scroll; }
+
+.scroll-panel::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px; }
+
+.scroll-panel::-webkit-scrollbar {
+  width: 7px;
+  background-color: transparent; }
+
+.scroll-panel::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px; }
+
+.tab-content > .active {
+  margin-top: 20px !important; }
+
+li {
+  list-style: none; }
+
+p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.5;
+  letter-spacing: 0.003em; }
+
+.white {
+  color: #FFF; }
+
+.no-padding {
+  padding: 0 !important; }
+
+.relative-row {
+  position: relative !important; }
+
+.margin-25-left {
+  margin-left: 25%; }
+
+.center {
+  text-align: center; }
+
+.latest-update {
+  height: 40px;
+  background: #EF5929;
+  text-align: center;
+  color: #FFF;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 26px;
+  margin-top: 20px; }
+
+.full-content .cover-section {
+  height: 200px;
+  background: #FFF;
+  -webkit-filter: drop-shadow(10px 4px 10px #cacaca);
+  -moz-filter: drop-shadow(10px 4px 10px #cacaca);
+  -ms-filter: drop-shadow(10px 4px 10px #cacaca);
+  filter: drop-shadow(10px 4px 10px #cacaca); }
+  .full-content .cover-section .banner-image {
+    background: #FFF;
+    height: 200px;
+    background-image: url(http://placekitten.com/g/400/200);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .full-content .cover-section .subcampaign-details {
+    position: relative;
+    height: 200px; }
+    .full-content .cover-section .subcampaign-details .subcampaign-container {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+      .full-content .cover-section .subcampaign-details .subcampaign-container .subcampaign-title h2 {
+        margin: 0; }
+      .full-content .cover-section .subcampaign-details .subcampaign-container .subcampaign-subtitle {
+        color: #909090; }
+.full-content .details-container {
+  margin-top: 20px; }
+  .full-content .details-container .creator-section.stick {
+    position: fixed;
+    top: 0px; }
+  .full-content .details-container .creator-section .creator-image {
+    text-align: center;
+    margin-top: 20px; }
+  .full-content .details-container .creator-section .creator-name {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px; }
+    .full-content .details-container .creator-section .creator-name p {
+      margin-bottom: 0; }
+  .full-content .details-container .creator-section .creator-links {
+    text-align: center; }
+    .full-content .details-container .creator-section .creator-links ul {
+      padding: 0 !important; }
+      .full-content .details-container .creator-section .creator-links ul li {
+        display: inline;
+        padding: 5px; }
+        .full-content .details-container .creator-section .creator-links ul li a i.fa {
+          font-size: 14px; }
+  .full-content .details-container .endorse-section .endorser-list .endorser-details-section {
+    border-bottom: 1px solid #ddd; }
+    .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser {
+      height: 60px;
+      width: 100%;
+      position: relative; }
+      .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser:hover {
+        text-decoration: none;
+        background: #fcfcfc; }
+      .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser .endorser-image {
+        float: left;
+        margin: 5px 15px;
+        width: 15%; }
+        .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser .endorser-image .endorser-image-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%; }
+      .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser .endorser-detail {
+        height: 60px;
+        width: 85%;
+        margin-left: 15%; }
+        .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser .endorser-detail .endorser-name {
+          padding-top: 10px;
+          margin: 0;
+          font-size: 16px;
+          font-weight: 400;
+          color: #212121; }
+        .full-content .details-container .endorse-section .endorser-list .endorser-details-section .endorser .endorser-detail .endorser-donation {
+          line-height: 0;
+          font-size: 14px;
+          color: #909090; }
+
+#myStory {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.75;
+  letter-spacing: 0.003em;
+  margin-top: 15px; }
+
+.conversation-input {
+  width: 100%;
+  height: 95px; }
+  .conversation-input .user-conversation-icon {
+    float: left;
+    margin: 15px 0;
+    width: 10%; }
+  .conversation-input .user-conversation-input-box {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px; }
+  .conversation-input .post-btn {
+    width: 100px;
+    height: 30px;
+    float: right;
+    border-radius: 0;
+    color: #FFFFFF;
+    background: #EF5A20;
+    margin-top: 5px; }
+
+.conversation-list {
+  border: 2px solid #212121;
+  margin-top: 20px; }
+  .conversation-list .conversation {
+    width: 100%;
+    min-height: 70px; }
+    .conversation-list .conversation .user-conversation-icon {
+      float: left;
+      padding: 10px 10px 0 10px;
+      width: 15%; }
+    .conversation-list .conversation .user-conversation-details {
+      width: 85%;
+      float: left;
+      padding-top: 10px; }
+      .conversation-list .conversation .user-conversation-details .user-name {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.1em;
+        line-height: 1.5;
+        letter-spacing: 0.013em; }
+      .conversation-list .conversation .user-conversation-details .posted-at {
+        font-weight: 300;
+        font-style: normal;
+        font-size: 0.82em;
+        line-height: 0.5;
+        letter-spacing: 0.003em; }
+    .conversation-list .conversation .user-conversation {
+      float: left;
+      padding: 15px 10px;
+      width: 100%; }
+  .conversation-list .user-conversation-input-box {
+    width: 90%;
+    height: 40px;
+    margin-top: 20px; }
+  .conversation-list .post-btn {
+    width: 100px;
+    height: 30px;
+    float: right;
+    border-radius: 0;
+    color: #FFFFFF;
+    background: #EF5A20;
+    margin-top: 5px; }
+
+.comment {
+  width: 100%;
+  min-height: 70px;
+  padding-left: 10%;
+  clear: both;
+  position: relative; }
+  .comment:before {
+    border-left: 2px solid #EF5A20;
+    content: '';
+    position: absolute;
+    left: 0;
+    height: calc(100% - 25px);
+    top: 10px;
+    left: 10%; }
+  .comment .user-comment-icon {
+    float: left;
+    padding: 10px 10px 0 10px;
+    width: 15%; }
+  .comment .user-comment-details {
+    width: 85%;
+    float: left;
+    padding-top: 10px; }
+    .comment .user-comment-details .comment-name {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.1em;
+      line-height: 1.5;
+      letter-spacing: 0.013em; }
+    .comment .user-comment-details .commented-at {
+      font-weight: 300;
+      font-style: normal;
+      font-size: 0.82em;
+      line-height: 0.5;
+      letter-spacing: 0.003em; }
+  .comment .user-comment {
+    clear: both;
+    padding: 15px 10px;
+    width: 100%;
+    font-size: 0.9em; }
+
+.comment-input {
+  margin-left: 10%;
+  padding: 5px 10px; }
+  .comment-input .comment-input-box {
+    width: 80%;
+    height: 40px; }
+  .comment-input .comment-btn {
+    height: 38px;
+    border-radius: 0;
+    background: #Ef5a20;
+    color: #fff; }
+
+.endorse {
+  text-align: center; }
+  .endorse .endorse-amount {
+    text-align: center;
+    color: white;
+    background: #EF5a20;
+    margin: 0; }
+    .endorse .endorse-amount .endorse-amount-text {
+      margin: 0; }
+  .endorse .endorse-btn {
+    width: 90%;
+    margin: 10px 5%;
+    background-color: #ef5a20;
+    color: white;
+    border-radius: 25px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 14px; }
+  .endorse ul {
+    padding: 0;
+    line-height: 25px; }
+  .endorse li {
+    display: inline;
+    font-weight: 400; }
+    .endorse li i {
+      padding: 5px;
+      background: blue;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      line-height: 15px;
+      margin: 0 5px;
+      color: #FFF; }
+
+.endorser-list .panel-endorse-color {
+  background: #EF5A20;
+  color: #FFF;
+  position: relative; }
+  .endorser-list .panel-endorse-color img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 0px; }
+
+/*# sourceMappingURL=style.css.map */
